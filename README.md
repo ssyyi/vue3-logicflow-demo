@@ -1,18 +1,19 @@
+<img width="1528" alt="flow1" src="https://github.com/ssyyi/vue3-logicflow-demo/assets/61812739/76e16100-a885-4b7f-9b25-92d453f10025">
+
 # logic flow
 
 This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## 介绍
+- 内容
+  - 从0到1在vue3中使用logicflow
+  - 流程图的拖拽与实现
+  - 自定义节点
+  - 节点单击事件
+  - 对齐线、快捷键、框选、小地图
+  - 图形和数据的导出
+  - bpmn格式
+  - 其他
 
 ## Project Setup
 
@@ -24,6 +25,10 @@ npm install
 
 ```sh
 npm run dev
+```
+or
+```sh
+yarn dev
 ```
 
 ### Type-Check, Compile and Minify for Production
