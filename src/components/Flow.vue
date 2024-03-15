@@ -23,6 +23,8 @@ import {
   BpmnAdapter,
 } from "@logicflow/extension";
 import { reactive, onMounted } from "vue";
+import { ContextPad } from "./contextPad";
+import setContextPad from "./setContextPad";
 let lf = reactive({
   container: null,
 });
@@ -45,9 +47,10 @@ onMounted(() => {
       MiniMap,
       BPMNElements,
       BpmnAdapter,
+      ContextPad,
     ],
   });
-
+  setContextPad(lf);
   lf.extension.dndPanel.setPatternItems([
     {
       label: "选区",
@@ -129,7 +132,7 @@ onMounted(() => {
     if (data.e.target.nodeName === "text") {
       return;
     } else {
-      alert("节点点击事件");
+      // alert("节点点击事件");
     }
   });
 
